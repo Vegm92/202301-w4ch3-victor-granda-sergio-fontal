@@ -1,8 +1,10 @@
+import Actions from "./components/Actions/Actions";
 import Info from "./components/Info/Info";
 import KeyBoard from "./components/KeyBoard/KeyBoard";
 
 const App = (): JSX.Element => {
   const className = "message";
+  const number = "";
 
   return (
     <div className="container">
@@ -11,15 +13,7 @@ const App = (): JSX.Element => {
         <div className="keyboard-container">
           <KeyBoard />
         </div>
-        <div className="actions">
-          <span className="number">667359961</span>
-          <a href="call" className="call">
-            Call
-          </a>
-          <a href="hang-up" className="hang active">
-            Hang up
-          </a>
-        </div>
+        <Actions number={number} />
       </main>
     </div>
   );
