@@ -1,3 +1,5 @@
+import "./Display.css";
+
 interface DisplayProps {
   number: string;
 }
