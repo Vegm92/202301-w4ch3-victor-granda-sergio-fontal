@@ -1,9 +1,12 @@
+import { Info } from "./components/Info/Info";
 import KeyBoard from "./components/KeyBoard/KeyBoard";
 
 const App = (): JSX.Element => {
+  const className = "message";
+
   return (
     <div className="container">
-      <span className="message">Calling...</span>
+      <Info className={className} />
       <main className="phone">
         <div className="keyboard-container">
           <KeyBoard />
