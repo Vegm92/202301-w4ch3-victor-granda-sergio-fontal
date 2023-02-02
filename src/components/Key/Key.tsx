@@ -1,12 +1,12 @@
 export interface KeyProps {
-  className: string;
+  keyClass: string;
   text: string;
 }
 
-const Key = ({ className, text }: KeyProps) => {
+const Key = ({ keyClass, text }: KeyProps) => {
   return (
     <li>
-      <button className={`key ${className}`}>{text}</button>
+      <button className={`key key--${keyClass}`}>{text}</button>
     </li>
   );
 };

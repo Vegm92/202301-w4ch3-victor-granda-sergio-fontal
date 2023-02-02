@@ -5,7 +5,7 @@ const KeyBoard = (): JSX.Element => {
   return (
     <ol className="keyboard">
       {keys.map((key, position) => (
-        <Key className={position === keys.length - 1 ? "big" : ""} text={key} />
+        <Key keyClass={position === keys.length - 1 ? " big" : ""} text={key} />
       ))}
     </ol>
   );
