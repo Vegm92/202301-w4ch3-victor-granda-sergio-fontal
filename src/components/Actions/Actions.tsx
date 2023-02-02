@@ -1,3 +1,6 @@
+import Action from "../Action/Action";
+import Display from "../Display/Display";
+
 interface ActionsProps {
   number: string;
 }
@@ -5,13 +8,8 @@ interface ActionsProps {
 const Actions = ({ number }: ActionsProps): JSX.Element => {
   return (
     <div className="actions">
-      <span className="number">{number}</span>
-      <a href="call" className="call">
-        Call
-      </a>
-      <a href="hang-up" className="hang active">
-        Hang up
-      </a>
+      <Display number={number} />
+      <Action href="call" className="call" text="Call" />
     </div>
   );
 };
