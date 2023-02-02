@@ -1,4 +1,4 @@
-import { Info } from "./components/Info/Info";
+import Info from "./components/Info/Info";
 import KeyBoard from "./components/KeyBoard/KeyBoard";
 
 const App = (): JSX.Element => {
